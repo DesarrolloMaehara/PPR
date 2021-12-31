@@ -37,11 +37,11 @@
         <input type="password" id="pass" class="fadeIn third" name="pass" autocomplete="off" placeholder="Ingrese su contraseña" required="required">
            <br>
       <br>
-       <div style="width:660px">
+      
        
          <input type="submit" style="width: 320px" class="form-control" name="btningresar" value="INGRESAR">
         
-        </div>
+       
     </form>
 
     <!-- Remind Passowrd -->

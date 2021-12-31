@@ -18,12 +18,12 @@
 <link href="css/assets/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
 
 ---------->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
         <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        
         <link href="css/loading_efecto.css" rel="stylesheet" type="text/css"/>
-        <link href="css/assets/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
-      
 <!------ Include the above in your HEAD tag ---------->
+        <link href="css/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     
 <!------ Include the above in your HEAD tag ---------->
 <link href="css/loading_efecto.css" rel="stylesheet" type="text/css"/>
@@ -102,18 +102,25 @@
                   <span aria-hidden="true">×</span>
                 </button>
               </div> 
-                <form   id="form_add_pendiente" class="form-control" action="POST"  style="width: 500px; height: 350px">
+                <form   id="form_add_pendiente" class="form-control alert-dark" action="POST"  style="width: 500px; height: 450px">
                  <div class="modal-body"   style="text-align: left"  >
   
-                     <a style=""> NOMBRE</a>
-                <input   class="form-control right"  style="width:250px;height:15px" type="text"  placeholder="INGRESE NOMBRE"    autocomplete="off"  required    name="nombrepend" id="nombrepend">            
+                     <a > NOMBRE</a>
+                     <br>
+                
+            
+                 <input class="form-control" style="width: 100%"   placeholder="INGRESE NOMBRE"  autocomplete="off"  required name="nombrepend" id="nombrepend">            
                 <br>
-                APELLIDO
-                <input class="form-control text-right" type="text"  style="width:250px;height:15px;text-align: left"  placeholder="INGRESE APELLIDO"  autocomplete="off"  required name="apellidopend" id="apellidopend">            
+                
+                
+                <a> APELLIDO</a>
+                <br>
+                <input class="form-control" style="width: 100%"   placeholder="INGRESE APELLIDO"  autocomplete="off"  required name="apellidopend" id="apellidopend">            
                 <br>
                
                 <strong><a>AREA</a></strong>
-                       <select style="width:250px;height:30px;text-align: right"  id="select_area" name="select_area" required >
+                <br>
+                       <select class="form-control" style="width: 100%"   id="select_area" name="select_area" required >
                             <%
                             while(rs.next()){
                             %>
@@ -124,11 +131,14 @@
                 <br>
                  <br>
             
-                     <div class="modal-footer"  style="width:450px">
-                        <input type="submit" class="fadeIn fourth" id="btn_add_pendiente" value="INGRESAR">
-                       
-                         <button type="button" class="btn btn-secondary" data-dismiss="modal">CANCELAR</button>
-                     </div>
+                     
+                 <div class="modal-footer align-right"  >
+                    <input type="submit"    id="btn_add_pendiente" value="REGISTRAR" >
+                 
+                    <input type="button" data-dismiss="modal"    value="CANCELAR" >
+
+
+                </div>
                      
               </div>
                        </form>
@@ -149,7 +159,8 @@
                 <form id="form_add_reset" action="POST">
               <div class="modal-body">
                 <a>INGRESE SU USUARIO</a>
-                <input type="text" placeholder="INGRESE USUARIO"  autocomplete="off"  required    name="peticion" id="peticion">            
+                
+                 <input class="form-control" style="width: 100%"   placeholder="INGRESE NOMBRE USUARIO "  autocomplete="off"  required name="peticion" id="peticion">            
                 <br>
                 
                
@@ -166,7 +177,7 @@
         
  
  </body>
- 
+ <script src="css/assets/jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
  <script src="js/llamadas_aldo.js" type="text/javascript"></script>
  <script src="css/assets/css,js, otros/sweetalert/sweetAlert2/sweetalert2.all.min.js" type="text/javascript"></script>
  <script src="css/assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>

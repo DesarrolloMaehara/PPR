@@ -9,9 +9,7 @@
   var ruta_consultas="./consultas/";
   var ruta_cruds="./cruds/";
 ///AJAX REGISTROS
-$(document).ready(function() {
-    $('#tabla_usuarios').DataTable();
-} );
+
    
 //function insert usuario
 
