@@ -592,15 +592,20 @@ function traer_vista_usuario() {
  
  function traer_vista_usuario2() {
   
-    $.ajax({
-    url: ruta_vistas+"/vista_nuevo_usuario.jsp",
-    type: "post",
-    
-    success : function(data){
-         $('#cargar').html("");
-        $('#cargar').html(data);
-            
-}});
+   $.ajax({
+                type: "POST",
+                url:"informes.jsp",
+             beforeSend: function() 
+             {
+            $('#contenido_row').html("");          
+                },           
+            success: function (data) 
+            {
+                $("#contenido_row").html(data);
+
+                onclickMenu();
+             }
+             });
 };
 
 function modalinsertusuario(){

@@ -42,7 +42,10 @@
             <ul class="sidebar-body-menu">
                 <li>
                     <a class="active" href="menu.jsp"><span class="icon home" aria-hidden="true"></span>Principal</a>
+                    <a class="active" href="reporte/informes.jsp"><span class="icon home" aria-hidden="true"></span>INFORMES</a>
                 </li>
+               
+              
                 <li>
                     <a class="show-cat-btn" href="##">
                     </a>
@@ -91,6 +94,7 @@
       </div>
     </div>
   </div>
+
 </nav>
     <!-- ! Main -->
     
@@ -118,8 +122,9 @@
    
     <main class="main users chart-page" id="skip-target">
         <div id="cargar" class="container">
-
+   
       </div>
+        
     </main>
   
     <!-- ! Footer -->
@@ -153,6 +158,11 @@
 <script src="css/assets/datatables/datatables.min.js" type="text/javascript"></script>
 <script src="css/assets/css,js, otros/sweetalert/sweetAlert2/sweetalert2.all.min.js" type="text/javascript"></script>
  
+
+
+
+
+
         
        
 </html>
