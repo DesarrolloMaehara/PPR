@@ -14,8 +14,10 @@ public class bdconexion1
         String motorBD = "sqlserver";
         String usuario = "sa";
         String bd      = "maeharasys";//CAMBIAR BASE DE DATOS
-        String servidor= "192.168.4.161";        
-        String clave   = "B12345!";
+       String servidor= "192.168.4.161";        
+       String clave   = "B12345!";
+        //String servidor= "192.168.6.109";        
+        //String clave   = "AESPINOLA";
       
         Class.forName(clase);
         String cadenaConexion = "jdbc:"+motorBD+"://"+servidor+";databasename="+bd;

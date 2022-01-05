@@ -27,10 +27,11 @@
     <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/3.18.0/themes/fusioncharts.theme.fusion.js"></script>
     <link href="informes.css" rel="stylesheet" type="text/css"/>
     <script src="informes.js" type="text/javascript"></script>
-    
+    <script src="informes2.js?v=1.2" type="text/javascript"></script>
 </head>
 <body>
     <button  onclick="datosjson()">informe</button>
+    <button  onclick="datosjson2()">informe2</button>
     <div id="chart-container"></div>
     
    

@@ -43,7 +43,9 @@
                 <li>
                     <a class="active" href="menu.jsp"><span class="icon home" aria-hidden="true"></span>Principal</a>
                     <a class="active" href="reporte/informes.jsp"><span class="icon home" aria-hidden="true"></span>INFORMES</a>
+                    <a class="active" href="reporte/informes.jsp"><span class="icon home" aria-hidden="true"></span>nuevo</a>
                 </li>
+                
                
               
                 <li>

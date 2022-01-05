@@ -19,18 +19,52 @@
     Connection con=conexion.crearConexion();
     JSONObject obje = new JSONObject();
     obje = new JSONObject();
-    PreparedStatement pt=con.prepareStatement("select dl_fecha, dl_muertos from ppr_datolotes where dl_lote=287");
+    PreparedStatement pt=con.prepareStatement("select  aviario,fecha, muertes,caudalimetro,"
+            + "temp_min,temp_max,product,consumo_bal,product from vis_mae_ppr_grafico where aviario='H1' AND month(fecha)='12'");
+     //PreparedStatement pt=con.prepareStatement("select idusuario,nombreusuario from tab_mae_ppr_log");
     ResultSet rs=pt.executeQuery();
-    ArrayList arrData = new ArrayList();
+ 
+    ArrayList arrFecha = new ArrayList();
+    ArrayList balanceados = new ArrayList();
+    ArrayList mortandad = new ArrayList();
+    ArrayList caudalimetro = new ArrayList();
+    ArrayList temp_min = new ArrayList();
+    ArrayList tem_max = new ArrayList();
+    ArrayList product = new ArrayList();
             while(rs.next()) {
-                Map<String, String> lv = new HashMap<String, String>();
-              //  lv.put("label", rs.getString("dl_fecha"));
-                lv.put("label", rs.getString("dl_fecha"));
-                lv.put("value", rs.getString("dl_muertos"));
-                arrData.add(lv);
+                Map<String, String> fecha = new HashMap<String, String>();
+                Map<String, String> bal = new HashMap<String, String>();
+                Map<String, String> mor= new HashMap<String, String>();
+                Map<String, String> cau = new HashMap<String, String>();
+                Map<String, String> tem_mini = new HashMap<String, String>();
+                Map<String, String> tem_maxi= new HashMap<String, String>();
+                 Map<String, String> pro= new HashMap<String, String>();
+              
+                fecha.put("label", rs.getString("fecha"));
+                mor.put("value", rs.getString("muertes"));
+                bal.put("value", rs.getString("consumo_bal"));
+                cau.put("value", rs.getString("caudalimetro"));
+                tem_mini.put("value", rs.getString("temp_min"));
+                tem_maxi.put("value", rs.getString("temp_max"));
+                pro.put("value", rs.getString("product"));
                 
-            }
-        con.close();
-    obje.put("data",arrData );
+                arrFecha.add(fecha);
+                mortandad.add(mor);
+                balanceados.add(bal);
+                caudalimetro.add(cau);
+                temp_min.add(tem_mini);
+                tem_max.add(tem_maxi);
+                product.add(pro);
+               
+              }
+            
+    con.close();
+    obje.put("data",arrFecha  );
+    obje.put("balanceados",balanceados );
+    obje.put("mortandad",mortandad );
+    obje.put("caudalimetro",caudalimetro );
+    obje.put("temp_min",temp_min );
+    obje.put("tem_max",tem_max );
+    obje.put("product",product );
     out.print(obje); %>
  
