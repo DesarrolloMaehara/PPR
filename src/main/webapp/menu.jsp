@@ -8,10 +8,10 @@
   <!-- Favicon -->
     <link rel="shortcut icon" href="img/yemita7.png" type="image/x-icon">
     <link href="css/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <link href="cssmenu/stilo.css" rel="stylesheet" type="text/css"/>
-    <link href="css/loading_efecto.css" rel="stylesheet" type="text/css"/>
-    <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
-    
+    <link href="cssmenu/estilo_yemsys.css" rel="stylesheet" type="text/css"/>
+    <link href="reporte/informes.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/3.18.0/themes/fusioncharts.theme.fusion.js"></script>
      
   </head>
 
@@ -40,14 +40,11 @@
         </div>
         <div class="sidebar-body">
             <ul class="sidebar-body-menu">
+              
                 <li>
                     <a class="active" href="menu.jsp"><span class="icon home" aria-hidden="true"></span>Principal</a>
-                    <a class="active" href="reporte/informes.jsp"><span class="icon home" aria-hidden="true"></span>INFORMES</a>
-                    <a class="active" href="reporte/informes.jsp"><span class="icon home" aria-hidden="true"></span>nuevo</a>
+                    <a class="active" href="reporte/informes.jsp"><span  aria-hidden="true"></span>INFORME AVIARIOS</a>
                 </li>
-                
-               
-              
                 <li>
                     <a class="show-cat-btn" href="##">
                     </a>
@@ -105,7 +102,7 @@
         <div   id="contenido_row" class="row">
     
        </div>
-        <div   id="contenedor_principal">
+        <div id="contenedor_principal">
     
        </div>
         <div class="container33 " id="loading_cubo" style="display: none">
@@ -150,22 +147,18 @@
 <script src="js/feather.min.js" type="text/javascript"></script>
 <!-- Custom scripts -->
 <script src="js/script.js" type="text/javascript"></script>
-
+<script src="reporte/informes2.js" type="text/javascript"></script>
 
 </body>
+
 <script src="css/assets/jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
 <script src="js/llamadas_aldo.js" type="text/javascript"></script>
 <script src="js/llamadas_claudio.js" type="text/javascript"></script>
 <script src="css/assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="css/assets/datatables/datatables.min.js" type="text/javascript"></script>
 <script src="css/assets/css,js, otros/sweetalert/sweetAlert2/sweetalert2.all.min.js" type="text/javascript"></script>
- 
+<script src="reporte/reporte_huevos.js" type="text/javascript"></script>
+<script src="reporte/reporte_mortandad.js" type="text/javascript"></script>
 
-
-
-
-
-        
-       
+<script src="reporte/informes2.js" type="text/javascript"></script>
 </html>
-

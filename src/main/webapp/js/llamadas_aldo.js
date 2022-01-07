@@ -668,3 +668,6 @@ function modalpeticionreset(){
     $("#modal_add_recuperar_contraseña").modal("show");
 
 };
+
+
+ 

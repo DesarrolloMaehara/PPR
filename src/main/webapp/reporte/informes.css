@@ -6,6 +6,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     Created on : 31-dic-2021, 18:26:09
     Author     : aespinola
 */
-#chart-container{
- height: 500px; 
+#aviarioA10,#aviarioA11,#aviarioB10{
+
+
+
+
 }
+
+  [pointer-events="bounding-box"] {display: none}
